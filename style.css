@@ -1,95 +1,116 @@
-/* General Page Styles */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fffaf2;
+/* Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffdf7;
+  color: #333;
   line-height: 1.6;
 }
 
+/* Header */
 header {
-  background-color: #ffb6b6;
-  padding: 20px;
   text-align: center;
+  padding: 2rem;
+  background: #f9f1e7;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-h1 {
-  margin: 0;
-  font-size: 32px;
-  color: #333;
+header h1 {
+  font-size: 2.5rem;
+  color: #d14e4e;
 }
 
-/* Cards Container */
+header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Cards */
 .cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
 }
 
-/* Base Card Style */
 .card {
-  width: 300px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  flex: 1 1 200px;
+  max-width: 220px;
   text-align: center;
-  color: #333;
-}
-
-/* Individual Card Colors */
-.cake {
-  background-color: #ffe6e6;
-}
-
-.gulab-jamun {
-  background-color: #fff0cc;
-}
-
-.ice-cream {
-  background-color: #e0f7fa;
-}
-
-.kalakhand {
-  background-color: #f3e5f5;
-}
-
-/* Image Style */
-.card img {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-/* Typography */
-h2 {
-  margin-bottom: 10px;
-  font-size: 24px;
-}
-
-ul {
-  list-style: square;
-  text-align: left;
-  margin: 10px auto;
-  padding-left: 20px;
-  max-width: 240px;
-}
-
-a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #007b5e;
+  background: #eee;
+  border-radius: 12px;
+  padding: 1.2rem;
   text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.3s;
 }
 
-a:hover {
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Unique background colors */
+.card.cake { background: #ffe4ec; }
+.card.gulabjamun { background: #fff4e6; }
+.card.icecream { background: #e6f9ff; }
+.card.kalakhand { background: #f9f9e6; }
+
+/* Dessert Sections */
+.dessert-section {
+  padding: 3rem 1.5rem;
+  border-top: 2px dashed #ccc;
+  background: #fff;
+  scroll-margin-top: 60px;
+}
+
+.dessert-section h2 {
+  font-size: 2rem;
+  color: #cc3e3e;
+  margin-bottom: 1rem;
+}
+
+.dessert-section img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  display: block;
+  margin: 1rem auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dessert-section p {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.dessert-section ul {
+  list-style: circle;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.dessert-section a {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.dessert-section a:hover {
   text-decoration: underline;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media screen and (max-width: 600px) {
   .cards {
     flex-direction: column;
@@ -97,63 +118,10 @@ a:hover {
   }
 
   .card {
+    width: 80%;
+  }
+
+  .dessert-section img {
     width: 90%;
   }
-
-  .card img {
-    max-width: 100%;
-  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;
-
-
-
-
-
-
-;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -2,58 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title><b>Dessert Drives</b></title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Dessert Drives</h1>
+    <h1><b>Dessert Drives</b></h1>
+    <p>Click a card to explore your favorite sweet treat</p>
   </header>
 
-  <main class="cards">
-    <section class="card cake" id="cake">
-      <h2><b>Cake</b></h2>
-      <img src="images\cake.jpg" alt="Cake" />
-      <p>A delicious chocolate cake topped with cookies and cream!</p>
+  <section class="cards">
+    <a href="#cake" class="card cake"><b>Cake</b></a>
+    <a href="#gulabjamun" class="card gulabjamun"><b>Gulab Jamun</b></a>
+    <a href="#icecream" class="card icecream"><b>Ice Cream</b></a>
+    <a href="#kalakhand" class="card kalakhand"><b>Kalakhand</b></a>
+  </section>
+
+  <main>
+    <section id="cake" class="dessert-section">
+      <h2><b>Chocolate Cake</b></h2>
+      <img src="images\cake.jpg" alt="Chocolate Cake" />
+      <p>This rich and creamy cake melts in your mouth with every bite!</p>
       <ul>
         <li>Flour</li>
-        <li>Chocolate</li>
+        <li>Cocoa powder</li>
         <li>Sugar</li>
+        <li>Butter</li>
+        <li>Chocolate</li>
       </ul>
+      <a href="#">⬆ Back to top</a>
     </section>
 
-    <section class="card gulab-jamun" id="gulabjamun">
+    <section id="gulabjamun" class="dessert-section">
       <h2><b>Gulab Jamun</b></h2>
       <img src="images\gulab jamun.jpg" alt="Gulab Jamun" />
-      <p>Soft milk-solid balls soaked in cardamom-scented sugar syrup.</p>
+      <p>Soft, sweet, and soaked in syrup—an Indian classic you can't resist!</p>
       <ul>
-        <li>Khova</li>
-        <li>Sugar</li>
+        <li>Khoya</li>
+        <li>Flour</li>
+        <li>Sugar syrup</li>
         <li>Cardamom</li>
       </ul>
+      <a href="#">⬆ Back to top</a>
     </section>
 
-    <section class="card ice-cream" id="icecream">
+    <section id="icecream" class="dessert-section">
       <h2><b>Ice Cream</b></h2>
       <img src="images\ice cream.jpg" alt="Ice Cream" />
-      <p>Chilled and creamy vanilla ice cream with sprinkles!</p>
+      <p>A cool and creamy delight in every scoop!</p>
       <ul>
         <li>Milk</li>
-        <li>Vanilla</li>
-        <li>Cream</li>
-      <ul>
+        <li>Vanilla extract</li>
+        <li>Sweetener</li>
+        <li>Fruit/Chocolate</li>
+      </ul>
+      <a href="#">⬆ Back to top</a>
     </section>
 
-    <section class="card kalakhand" id="kalakhand">
+    <section id="kalakhand" class="dessert-section">
       <h2><b>Kalakhand</b></h2>
       <img src="images\kalakanda.jpg" alt="Kalakhand" />
-      <p>Traditional Indian sweet made of solidified, sweetened milk.</p>
+      <p>This grainy delight is perfect for every festive moment!</p>
       <ul>
         <li>Milk</li>
         <li>Sugar</li>
-        <li>Ghee</li>
+        <li>Paneer</li>
+        <li>Pistachios</li>
       </ul>
+      <a href="#">⬆ Back to top</a>
     </section>
   </main>
 </body>
 </html>
+
