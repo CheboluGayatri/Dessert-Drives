@@ -1,13 +1,17 @@
-/* Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #fffdf7;
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
   color: #333;
   line-height: 1.6;
 }
@@ -15,113 +19,87 @@ body {
 /* Header */
 header {
   text-align: center;
-  padding: 2rem;
-  background: #f9f1e7;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  background-color: #ffb3c1;
+  color: white;
 }
 
 header h1 {
   font-size: 2.5rem;
-  color: #d14e4e;
-}
-
-header p {
-  font-size: 1rem;
-  color: #555;
 }
 
 /* Cards */
-.cards {
+.card-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 2rem;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
 }
 
 .card {
-  flex: 1 1 200px;
-  max-width: 220px;
-  text-align: center;
-  background: #eee;
-  border-radius: 12px;
-  padding: 1.2rem;
   text-decoration: none;
-  color: #222;
-  font-weight: bold;
-  transition: transform 0.2s, box-shadow 0.3s;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
-/* Unique background colors */
-.card.cake { background: #ffe4ec; }
-.card.gulabjamun { background: #fff4e6; }
-.card.icecream { background: #e6f9ff; }
-.card.kalakhand { background: #f9f9e6; }
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h2 {
+  text-align: center;
+  padding: 10px;
+  color: #ff4f73;
+}
 
 /* Dessert Sections */
-.dessert-section {
-  padding: 3rem 1.5rem;
-  border-top: 2px dashed #ccc;
-  background: #fff;
-  scroll-margin-top: 60px;
-}
-
-.dessert-section h2 {
-  font-size: 2rem;
-  color: #cc3e3e;
-  margin-bottom: 1rem;
-}
-
-.dessert-section img {
-  width: 100%;
-  max-width: 350px;
-  border-radius: 10px;
-  display: block;
-  margin: 1rem auto;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.dessert-section p {
-  font-size: 1.1rem;
+.dessert {
+  padding: 20px;
   text-align: center;
-  margin: 1rem 0;
+  background: #fff0f5;
+  margin: 20px;
+  border-radius: 10px;
 }
 
-.dessert-section ul {
-  list-style: circle;
-  padding-left: 2rem;
-  margin-bottom: 1rem;
+.dessert img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
 }
 
-.dessert-section a {
-  display: inline-block;
-  margin-top: 1rem;
-  text-decoration: none;
-  color: #0077cc;
-  font-weight: bold;
+.dessert h3 {
+  margin-top: 10px;
+  color: #ff4f73;
 }
 
-.dessert-section a:hover {
-  text-decoration: underline;
+ul {
+  list-style: none;
 }
 
-/* Responsive */
-@media screen and (max-width: 600px) {
-  .cards {
+ul li {
+  background: #ffe5ec;
+  margin: 5px auto;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-container {
     flex-direction: column;
     align-items: center;
-  }
-
-  .card {
-    width: 80%;
-  }
-
-  .dessert-section img {
-    width: 90%;
   }
 }

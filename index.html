@@ -1,78 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title><b>Dessert Drives</b></title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dessert DRIVES</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <h1><b>Dessert Drives</b></h1>
-    <p>Click a card to explore your favorite sweet treat</p>
+    <h1>Dessert Delights</h1>
+    <p>Pick your favorite sweet treat!</p>
   </header>
 
-  <section class="cards">
-    <a href="#cake" class="card cake"><b>Cake</b></a>
-    <a href="#gulabjamun" class="card gulabjamun"><b>Gulab Jamun</b></a>
-    <a href="#icecream" class="card icecream"><b>Ice Cream</b></a>
-    <a href="#kalakhand" class="card kalakhand"><b>Kalakhand</b></a>
+  <!-- Dessert Cards -->
+  <section class="card-container">
+    <a href="#cake" class="card">
+      <img src="images\cake.jpg" alt="Cake">
+      <h2>Cake</h2>
+    </a>
+    <a href="#gulabjamun" class="card">
+      <img src="images\gulabjamun.png" alt="Gulab Jamun">
+      <h2>Gulab Jamun</h2>
+    </a>
+    <a href="#icecream" class="card">
+      <img src="images\ice cream.jpg" alt="Ice Cream">
+      <h2>Ice Cream</h2>
+    </a>
+    <a href="#kalakhand" class="card">
+      <img src="images\kalakhanda.avif" alt="Kalakhand">
+      <h2>Kalakhand</h2>
+    </a>
   </section>
 
-  <main>
-    <section id="cake" class="dessert-section">
-      <h2><b>Chocolate Cake</b></h2>
-      <img src="images\cake.jpg" alt="Chocolate Cake" />
-      <p>This rich and creamy cake melts in your mouth with every bite!</p>
-      <ul>
-        <li>Flour</li>
-        <li>Cocoa powder</li>
-        <li>Sugar</li>
-        <li>Butter</li>
-        <li>Chocolate</li>
-      </ul>
-      <a href="#">⬆ Back to top</a>
-    </section>
+  <!-- Dessert Sections -->
+  <section id="cake" class="dessert">
+    <h2> Cake</h2>
+    <img src="images\cake.jpg" alt="Cake">
+    <p>Fluffy, sweet, and made with love – every bite of this cake feels like a celebration!</p>
+    <h3>Ingredients:</h3>
+    <ul>
+      <li>Flour</li>
+      <li>Sugar</li>
+      <li>Eggs</li>
+      <li>Butter</li>
+      <li>Vanilla Extract</li>
+    </ul>
+  </section>
 
-    <section id="gulabjamun" class="dessert-section">
-      <h2><b>Gulab Jamun</b></h2>
-      <img src="images\gulab jamun.jpg" alt="Gulab Jamun" />
-      <p>Soft, sweet, and soaked in syrup—an Indian classic you can't resist!</p>
-      <ul>
-        <li>Khoya</li>
-        <li>Flour</li>
-        <li>Sugar syrup</li>
-        <li>Cardamom</li>
-      </ul>
-      <a href="#">⬆ Back to top</a>
-    </section>
+  <section id="gulabjamun" class="dessert">
+    <h2> Gulab Jamun</h2>
+    <img src="images\gulabjamun.png" alt="Gulab Jamun">
+    <p>Soft, spongy balls soaked in warm sugary syrup – the taste of every festival!</p>
+    <h3>Ingredients:</h3>
+    <ul>
+      <li>Milk Powder</li>
+      <li>Flour</li>
+      <li>Ghee</li>
+      <li>Cardamom</li>
+      <li>Sugar Syrup</li>
+    </ul>
+  </section>
 
-    <section id="icecream" class="dessert-section">
-      <h2><b>Ice Cream</b></h2>
-      <img src="images\ice cream.jpg" alt="Ice Cream" />
-      <p>A cool and creamy delight in every scoop!</p>
-      <ul>
-        <li>Milk</li>
-        <li>Vanilla extract</li>
-        <li>Sweetener</li>
-        <li>Fruit/Chocolate</li>
-      </ul>
-      <a href="#">⬆ Back to top</a>
-    </section>
+  <section id="icecream" class="dessert">
+    <h2>Ice Cream</h2>
+    <img src="images\ice cream.jpg" alt="Ice Cream">
+    <p>Creamy, cold, and refreshing – the ultimate treat for a sunny day!</p>
+    <h3>Ingredients:</h3>
+    <ul>
+      <li>Milk</li>
+      <li>Cream</li>
+      <li>Sugar</li>
+      <li>Flavoring</li>
+      <li>Chocolate/fruit toppings</li>
+    </ul>
+  </section>
 
-    <section id="kalakhand" class="dessert-section">
-      <h2><b>Kalakhand</b></h2>
-      <img src="images\kalakanda.jpg" alt="Kalakhand" />
-      <p>This grainy delight is perfect for every festive moment!</p>
-      <ul>
-        <li>Milk</li>
-        <li>Sugar</li>
-        <li>Paneer</li>
-        <li>Pistachios</li>
-      </ul>
-      <a href="#">⬆ Back to top</a>
-    </section>
-  </main>
+  <section id="kalakhand" class="dessert">
+    <h2> Kalakhand</h2>
+    <img src="images\kalakhanda.avif" alt="Kalakhand">
+    <p>Rich and milky with a hint of cardamom – this sweet is pure happiness!</p>
+    <h3>Ingredients:</h3>
+    <ul>
+      <li>Milk</li>
+      <li>Sugar</li>
+      <li>Cardamom Powder</li>
+      <li>Ghee</li>
+      <li>Pistachios</li>
+    </ul>
+  </section>
+
 </body>
 </html>
-
